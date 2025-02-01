@@ -17,13 +17,22 @@
     <style>
         .font-sora{
             font-family: "Sora", serif;
+            
         .bg-img{
-          background: url(c2-assets/Group\ 16.png);
+            background: url(c2-assets/Group\ 16.png);
         }
+
         @media screen and (max-width:576px) {
           .logo-header{
             display: none;
           
+          }
+          .nature, .nature-image{
+            margin-top: 290px;
+           
+          }
+          .nature-image{
+            margin-left: -20px;
           }
           .logo-header-2{
             display: block;
@@ -31,7 +40,9 @@
             padding-bottom: 10px;
           }
           .card-banner{
-            width: 350px;
+            max-width: 350px;
+            width: auto;
+            margin-top: -80px;
           }
           
           .navbar{
@@ -46,12 +57,17 @@
           .text-banner{
           text-align: center;
           margin-top: 10px;
+          height: 260px;
 
+          }
+          .btn-type{
+            margin-bottom: 50px;
           }
 
           .banner-title{
             color: green;
           }
+          
         }
         
         }
@@ -98,8 +114,8 @@
             </div>
           </nav>
        <div class="text-center">
-        <h1 class="text-4xl font-bold text-center mt-20">Freshness <span class="text-[#179800]">You Can <br>
-            Count</span> On, Prices You’ll Love!</h1>
+        <h1 class="text-4xl sm:text-6xl text-center font-semibold
+         mt-32 mb-8 animate-bounce text-black">Freshness <span class="text-[#179800]">You Can <br> Count</span> On, Prices You’ll Love!</h1>
             <br>
             <p class="text-center text-gray-500">Shop your daily essentials
                 at unbeatable prices. From fresh produce to pantry <br> staples, we’ve 
@@ -111,12 +127,12 @@
     <main class="md:container mx-auto">
         <!-- service content start-->
         <section class="mt-20  ">
-            <h1 class="text-2xl text-[#179800] font-bold mx-10 lg:mx-10">Services</h1>
+            <h1 class="text-3xl text-[#179800] font-bold mx-10 md:mx-10">Services</h1>
                <div>
                 <!-- cards -->
                 <div class=" my-7 grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                     <!-- card 1 -->
-                    <div class="card  bg-base-100 bg-[#EFEBE3] mx-auto my-5  py-8 lg:py-8  shadow-xl">
+                    <div class="card  bg-base-100 bg-[#EFEBE3] mx-auto my-5  py-8 md:py-8  shadow-xl">
                       <div class="mx-auto bg-white rounded-full">
                         <img class="p-3" src="c2-assets/service.png" alt="">
                       </div>
@@ -127,7 +143,7 @@
                       </div>
                     </div>
                     <!-- card 2 -->
-                    <div class="card bg-base-100 bg-[#EFEBE3] mx-auto my-5  py-8 lg:py-8  shadow-xl">
+                    <div class="card bg-base-100 bg-[#EFEBE3] mx-auto my-5  py-8 md:py-8  shadow-xl">
                      <div class="mx-auto bg-white rounded-full">
                       <img class="p-3 " src="c2-assets/delivery.png" alt="">
                      </div>
@@ -139,7 +155,7 @@
                       </div>
                     </div>
                     <!-- card 3 -->
-                    <div class="card bg-[#EFEBE3] bg-base-100 mx-auto my-5  py-8 lg:py-8   shadow-xl">
+                    <div class="card bg-[#EFEBE3] bg-base-100 mx-auto my-5  py-8 md:py-8   shadow-xl">
                       <div class="mx-auto bg-white rounded-full ">
                         <img class="p-3" src="c2-assets/healthy.png" alt="">
                        </div>
@@ -157,7 +173,7 @@
         <!-- Popular product starts -->
          <section class="bg-[#EFEBE3] max-w-screen-xl min-h-screen  mt-20 mx-auto overflow-hidden">
           <!-- title -->
-          <h1 class="text-2xl font-bold text-[#179800] lg:mx-20 mt-20">Popular Products</h1>
+          <h1 class="text-2xl font-bold text-[#179800] mx-10 lg:mx-20 mt-20">Popular Products</h1>
          <!-- product card -->
           <div class=" lg:flex mt-10 lg:mx-10 ">
             <!-- Big Card -->
@@ -272,7 +288,7 @@
 
         <!-- customer review section -->
         <section class="mt-10">
-          <h1 class="text-2xl text-green-500 font-bold px-10 mx-auto lg:mx-10">Customer Review</h1>
+          <h1 class="text-2xl text-green-500 font-bold px-10 mx-10 lg:mx-10">Customer Review</h1>
           <!-- avatar content -->
           <div class="grid grid-cols-1 mt-10 md:grid-cols-2 lg:grid-cols-3  ">
             <!-- avater 1 -->
@@ -358,8 +374,8 @@
         </section>
 
         <!-- Arrival & Offer Section -->
-         <section class="mt-10">
-          <div class="mx-auto lg:mx-20"><h1  class="text-2xl font-bold text-green-500">Arrival & Offers</h1></div>
+         <section class="mt-10 ">
+          <div class=" mb-20 mx-auto lg:mx-20"><h1  class="text-2xl font-bold text-green-500">Arrival & Offers</h1></div>
           <!-- card Section -->
         <div class="mt-10 lg:flex justify-center items-center gap-x-7">
           <!-- card-1 -->
@@ -398,12 +414,13 @@
 
     </main>
 
-    <!-- footer section start -->
-    <footer>
+    <!--Main footer section start -->
+    <footer class="relative mt-80  ">
       <!-- vegetable busket start -->
-      <section class="mt-24 md:container mx-auto">
+      <section class=" absolute  -mt-40 md:container mx-auto">
         <!-- card section -->
-         <div class=" card-banner lg:flex justify-center mx-auto gap-x-20 bg-stone-300 lg:w-[1000px] rounded-xl ">
+         <div class=" card-banner mx-9  lg:flex justify-center  gap-x-20
+          bg-stone-300 lg:w-[1000px] lg:mx-auto rounded-xl ">
           <!-- image -->
           <div class="">
             <img src="c2-assets/vegetable-busket.png" alt="">
@@ -415,14 +432,47 @@
                <div>
                 <input class="h-12 text-white w-3/4 px-3 rounded-md" placeholder="Enter email" type="text">
                </div>
-               <button class="h-9 w-28 bg-green-600 text-white rounded-lg">Subscribe</button>
+               <button class=" btn-type h-9 w-28 bg-green-600 text-white rounded-lg">Subscribe</button>
            </div>
          </div>
-         <!--  footer card -->
-           <div>
-
-           </div>
+         
       </section>
+
+      <!--  footer section start -->
+       <section>
+        <section class="footer mx-auto bg-[#179800] bg-base-200 h-auto lg:h-[500px] text-base-content  p-10">
+          <aside class=" ">
+          <div class="flex text-3xl text-white md:mt-20">
+            <div class=" nature-image mt-5  md:pt-40">
+              <img  src="c2-assets/Group.png" alt="">
+            </div>
+            
+            <div class="nature md:pt-40">
+              <h1>Nature's <br> platter</h1>
+            </div>
+          </div>
+            <p class="text-white ">
+              Discover a world of treats, toys, and <br> essentials handpicked
+               for your furry <br> friends
+            </p>
+          </aside>
+          <nav class="text-white md:my-20 md:space-y-5  md:pt-40 ">
+            <a class="link link-hover">Product</a>
+            <a class="link link-hover">Services</a>
+           <a class="link link-hover">Contact us</a>    
+          </nav>
+          <nav class="md:my-20 lg:pt-60">
+            <p class="text-white">Follow us</p>
+           <div class="space-x-3">
+            <i class="fa-brands fa-facebook text-white   rounded-full"></i>
+            <i class="fa-brands fa-instagram text-white"></i>
+            <i class="fa-brands fa-linkedin text-white"></i>
+            <i class="fa-brands fa-youtube text-white"></i>
+           </div>
+          </nav>
+          
+        </section>
+       </section>
     </footer>
 </body>
 </html>
