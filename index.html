@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Platter</title>
+    <!-- Google Fonts cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- Font Awesome cdn -->
+    <script src="https://kit.fontawesome.com/55d7fdb0e1.js" crossorigin="anonymous"></script>
+    <!-- DaisyUI cdn --> 
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .font-sora{
+            font-family: "Sora", serif;
+        .bg-img{
+          background: url(c2-assets/Group\ 16.png);
+        }
+        @media screen and (max-width:576px) {
+          .logo-header{
+            display: none;
+          
+          }
+          .logo-header-2{
+            display: block;
+            padding-left: 10px;
+            padding-bottom: 10px;
+          }
+          .card-banner{
+            width: 350px;
+          }
+          
+          .navbar{
+            border-bottom: 1px solid green;
+           
+          }
+
+          .card-hide{
+            display: none;
+
+          }
+          .text-banner{
+          text-align: center;
+          margin-top: 10px;
+
+          }
+
+          .banner-title{
+            color: green;
+          }
+        }
+        
+        }
+    </style>
+
+</head>
+<body class="font-sora">
+    <!-- Header section start -->
+    <header class="md:container mx-auto bg-stone-50 ">
+        <!-- navbar start -->
+        <nav >
+            <div class="navbar bg-stone-50 bg-base-100 max-w-full overflow-hidden">
+              <div class="navbar-start">
+                <img class="logo-header mt-2" src="c2-assets/logo-header.png" alt="">
+                <img class="hidden logo-header-2" src="c2-assets/Group.png" alt="">
+              </div>
+              <div class="navbar-end lg:hidden">
+                <div class="dropdown">
+                  <div tabindex="0" role="button" class="btn btn-ghost">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                  </div>
+                  <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <li><a>Product</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Contact us</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                  <li><a>Product</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Contact us</a></li>
+                </ul>
+              </div>
+              <div class="navbar-end hidden md:flex">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping mx-5"></i>
+                <a class="btn">Login</a>
+                <a class="btn bg-[#179800] text-white mx-5">Register</a>
+              </div>
+            </div>
+          </nav>
+       <div class="text-center">
+        <h1 class="text-4xl font-bold text-center mt-20">Freshness <span class="text-[#179800]">You Can <br>
+            Count</span> On, Prices You’ll Love!</h1>
+            <br>
+            <p class="text-center text-gray-500">Shop your daily essentials
+                at unbeatable prices. From fresh produce to pantry <br> staples, we’ve 
+                got you covered every day!</p>
+            <img class="h-[500px] w-auto mx-auto mt-5" src="c2-assets/hero-vegetables.png" alt="">
+       </div>
+    </header>
+    <!-- main section start -->
+    <main class="md:container mx-auto">
+        <!-- service content start-->
+        <section class="mt-20  ">
+            <h1 class="text-2xl text-[#179800] font-bold mx-10 lg:mx-10">Services</h1>
+               <div>
+                <!-- cards -->
+                <div class=" my-7 grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- card 1 -->
+                    <div class="card  bg-base-100 bg-[#EFEBE3] mx-auto my-5  py-8 lg:py-8  shadow-xl">
+                      <div class="mx-auto bg-white rounded-full">
+                        <img class="p-3" src="c2-assets/service.png" alt="">
+                      </div>
+                      <div class="card-body ">
+                        <h2 class="card-title mx-auto">24/7 Services </h2>
+                        <p class="mx-auto text-center">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed do <br> eiusmod tempor incididunt</p>
+                       
+                      </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="card bg-base-100 bg-[#EFEBE3] mx-auto my-5  py-8 lg:py-8  shadow-xl">
+                     <div class="mx-auto bg-white rounded-full">
+                      <img class="p-3 " src="c2-assets/delivery.png" alt="">
+                     </div>
+                      
+                      <div class="card-body ">
+                        <h2 class="card-title mx-auto">Fast Delivery</h2>
+                        <p class="mx-auto text-center">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed do <br> eiusmod tempor incididunt</p>
+                       
+                      </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="card bg-[#EFEBE3] bg-base-100 mx-auto my-5  py-8 lg:py-8   shadow-xl">
+                      <div class="mx-auto bg-white rounded-full ">
+                        <img class="p-3" src="c2-assets/healthy.png" alt="">
+                       </div>
+                      <div class="card-body ">
+                        <h2 class="card-title mx-auto">Healthy Products </h2>
+                        <p class="mx-auto text-center ">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed do <br> eiusmod tempor incididunt</p>
+                        
+                      </div>
+                    </div>
+                   </div>
+               </div>
+        
+        </section>
+
+        <!-- Popular product starts -->
+         <section class="bg-[#EFEBE3] max-w-screen-xl min-h-screen  mt-20 mx-auto overflow-hidden">
+          <!-- title -->
+          <h1 class="text-2xl font-bold text-[#179800] lg:mx-20 mt-20">Popular Products</h1>
+         <!-- product card -->
+          <div class=" lg:flex mt-10 lg:mx-10 ">
+            <!-- Big Card -->
+            <div class=" bg-gradient-to-r from-green-400 to-green-100 mx-auto md:mx-8 rounded-xl h-[400px] py-5 w-96">
+              <div class="card-body ">
+                <h2 class="card-title text-white font-bold text-2xl">30% off</h2>
+                <p>Discover a world of treats, toys
+                   and <br> esensials handpicked for</p>
+                <div>
+                  <button class="bg-white text-black font-bold px-5 py-2 rounded-lg ">Buy Now</button>
+                </div>
+                <div class="card-actions  justify-end">
+                 <img class="h-60 -mt-11" src="c2-assets/vegetable-offer.png" alt="">
+                </div>
+              </div>
+            </div>
+             <!-- small card -->
+              <div class="grid grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-3 lg:gap-x-8 lg:gap-y-8    my-5 md:my-0 " >
+                <!-- card-1 -->
+                <div class="mx-auto w-[190px] items-center flex shadow-xl px-3 py-2 rounded-lg bg-white gap-x-4">
+                  <div><img class="  bg-img rounded-lg" src="c2-assets/onion.png" alt=""></div>
+                  <!-- text -->
+                  <div>
+                    <i class="fa-solid fa-star text-amber-500  "></i>4.5
+                   <h1 class="font-bold  ">Onion 1KG</h1>
+                   <p class="">$39.99</p>
+                  </div>
+                </div>
+                <!-- card-2 -->
+                <div class="mx-auto w-[200px]  items-center flex shadow-xl px-3 py-2 rounded-lg bg-white gap-x-4">
+                  <div><img class="bg-img rounded-lg" src="c2-assets/tomato.png" alt=""></div>
+                  <!-- text -->
+                  <div>
+                    <i class="fa-solid fa-star text-amber-500  "></i>4.5
+                   <h1 class="font-bold ">Tomato 500 g</h1>
+                   <p class="">$39.99</p>
+                  </div>
+                </div>
+                <!-- card-3 -->
+                <div class="mx-auto w-[200px] items-center flex shadow-xl px-3 py-2 rounded-lg bg-white gap-x-4">
+                  <div><img class="bg-img rounded-lg" src="c2-assets/potato.png" alt=""></div>
+                  <!-- text -->
+                  <div>
+                    <i class="fa-solid fa-star text-amber-500  "></i>4.5
+                   <h1 class="font-bold ">Potato 1KG</h1>
+                   <p class="">$39.99</p>
+                  </div>
+                </div>
+                <!-- card-4 -->
+                <div class="mx-auto w-[200px] items-center flex shadow-xl px-3 py-2 rounded-lg bg-white gap-x-4">
+                  <div><img class="bg-img rounded-lg" src="c2-assets/tomato.png" alt=""></div>
+                  <!-- text -->
+                  <div>
+                    <i class="fa-solid fa-star text-amber-500 "></i>4.5
+                   <h1 class="font-bold ">Tomato 500 g</h1>
+                   <p class="">$39.99</p>
+                  </div>
+                </div>
+                <!-- card-5 -->
+                <div class="mx-auto w-[190px] items-center flex shadow-xl px-3 py-2 rounded-lg bg-white gap-x-4">
+                  <div><img class="bg-img rounded-lg" src="c2-assets/onion.png" alt=""></div>
+                  <!-- text -->
+                  <div>
+                    <i class="fa-solid fa-star text-amber-500  "></i>4.5
+                   <h1 class="font-bold ">Onion 1KG</h1>
+                   <p class="">$39.99</p>
+                  </div>
+                </div>
+                <!-- card-6 -->
+                <div class="mx-auto w-[200px]  items-center flex shadow-xl px-3 py-2 rounded-lg bg-white gap-x-4">
+                  <div><img class="bg-img rounded-lg" src="c2-assets/tomato.png" alt=""></div>
+                  <!-- text -->
+                  <div>
+                    <i class="fa-solid fa-star text-amber-500  "></i>4.5
+                   <h1 class="font-bold ">Tomato 500 g</h1>
+                   <p class="">$39.99</p>
+                  </div>
+                </div>
+                <!-- card-7 -->
+                <div class="mx-auto w-[190px] items-center flex shadow-xl px-3 py-2 rounded-lg bg-white gap-x-4">
+                  <div><img class="bg-img rounded-lg" src="c2-assets/onion.png" alt=""></div>
+                  <!-- text -->
+                  <div>
+                    <i class="fa-solid fa-star text-amber-500  "></i>4.5
+                   <h1 class="font-bold ">Onion 1KG</h1>
+                   <p class="">$39.99</p>
+                  </div>
+                </div>
+                <!-- card-8 -->
+                <div class="mx-auto w-[200px] items-center flex shadow-xl px-3 py-2 rounded-lg bg-white gap-x-4">
+                  <div><img class="bg-img rounded-lg" src="c2-assets/potato.png" alt=""></div>
+                  <!-- text -->
+                  <div>
+                    <i class="fa-solid fa-star text-amber-500  "></i>4.5
+                   <h1 class="font-bold ">Potato 1KG</h1>
+                   <p class="">$39.99</p>
+                  </div>
+                </div>
+                <!-- card-9 -->
+                <div class=" card-hide mx-auto w-[200px] items-center flex  shadow-xl px-3 py-2 rounded-lg bg-white gap-x-4">
+                  <div><img class="bg-img rounded-lg" src="c2-assets/potato.png" alt=""></div>
+                  <!-- text -->
+                  <div>
+                    <i class="fa-solid fa-star text-amber-500  "></i>4.5
+                   <h1 class="font-bold ">Potato 1KG</h1>
+                   <p class="">$39.99</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>
+
+        <!-- customer review section -->
+        <section class="mt-10">
+          <h1 class="text-2xl text-green-500 font-bold px-10 mx-auto lg:mx-10">Customer Review</h1>
+          <!-- avatar content -->
+          <div class="grid grid-cols-1 mt-10 md:grid-cols-2 lg:grid-cols-3  ">
+            <!-- avater 1 -->
+             <div class="mx-auto px-5 py-5 my-5  border-4 text-center ">
+              <div class="avatar ">
+                <div class="w-24 rounded-full">
+                  <img src="c2-assets/Muhit.jpg" alt="">
+                </div> 
+              </div>
+               
+              <h1 class="text-xl font-bold">M A Muhit Joy</h1>
+              <!-- ratings -->
+              <div class="rating ">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                   />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="checked" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <p class="text-gray-500 my-3">Very good quality vegetables. <br> I am 
+                very satidfied to buy <br> vegetables from  this shop.</p>
+             
+              <p class="font-bold my-3 text-sky-600">Engineer</p>
+              <p class="font-bold">Sylhet</p>
+             </div>
+            <!-- avater 2 -->
+             <div class="mx-auto px-5 py-5 my-5 border-4 text-center ">
+              <div class="avatar ">
+                <div class="w-24 rounded-full">
+                  <img src="c2-assets/Nazmul.jpg" />
+                </div> 
+              </div>
+              <h1 class="text-xl font-bold">MD. Nazmul Hasan</h1>
+              <!-- ratings -->
+              <div class="rating ">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked="checked" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <p class="text-gray-500 my-3">Very good quality vegetables. <br> I am 
+                 very satidfied to buy <br> vegetables from  this shop.</p>
+              
+              <p class="font-bold my-3 text-sky-600">Engineer</p>
+              <p class="font-bold">Dhaka</p>
+             </div>
+            <!-- avater 3 -->
+             <div class="mx-auto px-5 py-5 my-5  border-4 text-center ">
+              <div class="avatar ">
+                <div class="w-24 rounded-full">
+                  <img src="c2-assets/Morshed.jpg" />
+                </div> 
+              </div>
+              <h1 class="text-xl font-bold">A.R Golum Morshed</h1>
+              <!-- ratings -->
+              <div class="rating ">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked="checked" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <p class="text-gray-500 my-3">Very good quality vegetables. <br> I am 
+                very satidfied to buy <br> vegetables from  this shop.</p>
+              
+              <p class="font-bold my-3 text-sky-600">Engineer</p>
+              <p class="font-bold">Chittagong</p>
+             </div>
+          </div> 
+        </section>
+
+        <!-- Arrival & Offer Section -->
+         <section class="mt-10">
+          <div class="mx-auto lg:mx-20"><h1  class="text-2xl font-bold text-green-500">Arrival & Offers</h1></div>
+          <!-- card Section -->
+        <div class="mt-10 lg:flex justify-center items-center gap-x-7">
+          <!-- card-1 -->
+          <div class=" bg-green-800 lg:w-[700px]  h-70 rounded-xl">
+            <div class="flex text-center justify-between mt-5 ">
+              <div class="mt-10 ">
+                <img class="h-20" src="c2-assets/dawat-logo.png" alt="">
+                <br>
+                  <button class="h-9 w-60 bg-green-500 text-white rounded-xl">cook the dishes</button>
+                 
+                  <h1 class="text-3xl text-white mt-10">UP to <span class="font-bold">20% OFF</span></h1>
+              </div>
+              <div class="mt-8">
+                <img class="h-60" src="c2-assets/dawat-mock-up.png" alt="">
+              </div>
+            </div>
+          </div>
+           <!-- card-2 -->
+              <div class=" bg-blue-800 max-w-[400px]  h-70 rounded-xl">
+                <div class="flex text-center justify-between mt-5 ">
+                  <div class="mt-10 ">
+                    <img class="h-20 -mt-10 mx-5" src="c2-assets/india-gate-logo.png" alt="">
+                    <br>
+                    <button class="h-10 w-4/5  bg-blue-500 text-white rounded-xl">World No.1 Rice</button>
+                     
+                      <h1 class="text-3xl text-white mx-2 mt-10">UP to <span class="font-bold">40% OFF</span></h1>
+                  </div>
+                  <div class="mt-8">
+                    <img class="h-60" src="c2-assets/india-gate-mock-up.png" alt="">
+                  </div>
+                </div>
+              </div>
+           
+        </div>
+         </section>
+
+    </main>
+
+    <!-- footer section start -->
+    <footer>
+      <!-- vegetable busket start -->
+      <section class="mt-24 md:container mx-auto">
+        <!-- card section -->
+         <div class=" card-banner lg:flex justify-center mx-auto gap-x-20 bg-stone-300 lg:w-[1000px] rounded-xl ">
+          <!-- image -->
+          <div class="">
+            <img src="c2-assets/vegetable-busket.png" alt="">
+          </div>
+          <!-- text -->
+           <div class=" text-banner mt-20 space-y-5 mx-auto ">
+               <h1 class=" banner-title text-3xl text-black font-bold">Get Grocery News!</h1>
+               <p>Exclusive training tips, ticks, product deals and more.</p>
+               <div>
+                <input class="h-12 text-white w-3/4 px-3 rounded-md" placeholder="Enter email" type="text">
+               </div>
+               <button class="h-9 w-28 bg-green-600 text-white rounded-lg">Subscribe</button>
+           </div>
+         </div>
+         <!--  footer card -->
+           <div>
+
+           </div>
+      </section>
+    </footer>
+</body>
+</html>
